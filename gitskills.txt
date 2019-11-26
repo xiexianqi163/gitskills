@@ -105,15 +105,24 @@ Git is free software distributed under the GPL.
 活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上
 
 25、创建分支
-	git checkout -b dev
+	git checkout -b dev    创建并切换
 	dev是分支名    -b表示创建并切换，相当于以下两条命令：
-	git branch dev
-	git checkout dev
+	git branch dev         创建分支
+	git checkout dev	   切换分支
 	
 26、查看当前分支
 	git branch
 	
-27、
+27、在新建的分支上工作，将成果add并commit之后，切换回master分支就可以完成合并动作了
+
+28、合并分支
+	git checkout master  切换回主分支
+	git merge dev        将dev分支工作成果合并到master(当前)分支
+	git branch -d dev    删除dev分支
+	
+29、创建分支的另一种命令
+	git switch -c dev   创建并切换分支
+	git switch master   直接切换分支
 	
 	
 	
