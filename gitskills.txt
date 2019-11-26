@@ -95,6 +95,26 @@ Git is free software distributed under the GPL.
 22、以后推送可以不加 -u
 	git push origin master
 	
+23、创建远程库并克隆到本地库
+	git clone git@github.com:xiexianqi163/gitskills.git
+
+24、分支
+	假设你准备开发一个新功能，需要两周才能完成，第一周你写了50%代码，如果立刻提交，由于代码还没写完，
+不完整的代码库会导致别人不能干活了，如果等代码全部写完再一次提交，又存在丢失每天进度的风险。有了分支
+就不用怕了，你创建了一个属于自己的分支，别人看不到，还继续在原来分支上正常工作，而你在自己的分支上干
+活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上
+
+25、创建分支
+	git checkout -b dev
+	dev是分支名    -b表示创建并切换，相当于以下两条命令：
+	git branch dev
+	git checkout dev
+	
+26、查看当前分支
+	git branch
+	
+27、
+	
 	
 	
 	
